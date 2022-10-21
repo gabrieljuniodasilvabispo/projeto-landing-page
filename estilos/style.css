@@ -73,7 +73,8 @@ main {
 .section1 h1 {
     font-size: 3em;
     margin: 20px 0px 20px 0px;
-    color: #ffe5df;;
+    color: #ffe5df;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.486);
 }
 
 .section1 a {
@@ -88,19 +89,29 @@ main {
 
 .section1 a:hover {
     transform: translate(-2px, -2px);
+    background-color: #f0bfb4;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.301);
+    transition: .2s;
 }
 
 .section2 {
     text-align: justify;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     margin: auto;
     line-height: 1.5em;
+    transform: translate(0px, -40px);
+}
+
+.section2 ol {
+    list-style-position: inside;
+    margin-bottom: 10px;
 }
 
 .section2 h2 {
     color: #ffe5df;
     text-align: center;
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 footer {
