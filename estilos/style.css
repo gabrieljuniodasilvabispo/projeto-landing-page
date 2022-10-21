@@ -15,6 +15,19 @@ body {
 header {
     padding: 20px;
     height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 header nav {
@@ -36,30 +49,25 @@ header, nav, main a {
 }
 
 main {
-    height: 450px;
-    width: 100%;
-    background-color: white;
-    
+    height: 490px;
+    width: 100vw;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;  
+    justify-content: space-around;
 }
 
 .section1 {
-    width: 100%;
+    width: 65%;
+    height: 350px;
 }
 
-.section1 > div.imagem {
-   
-}
-
-.section1 > div > img {
+.section1  div.imagem {
     height: 200px;
     width: 200px;
     background-color: black;
+    transform: translate(700px, -120px);
 }
 
 .section1 h1 {
@@ -69,27 +77,30 @@ main {
 }
 
 .section1 a {
-    background: white;
+    background: #f0bfb4;
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.123);
     display: inline-block;
+    color: #3b2d2b;
 }
 
 .section1 a:hover {
-    transform: translate(-3px, -3px);
+    transform: translate(-2px, -2px);
 }
 
 .section2 {
-    text-align: center;
+    text-align: justify;
     padding-bottom: 30px;
-    margin-bottom: 40px;
-    
+    margin: auto;
+    line-height: 1.5em;
 }
 
 .section2 h2 {
     color: #ffe5df;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 footer {
